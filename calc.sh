@@ -13,6 +13,7 @@ while true; do
   echo "(A)dd"
   echo "(S)ubtract"
   echo "(M)ultiply"
+  echo "(D)ivide"
   echo "(E)xit"
   # Then, capture the user selection.
   read user_selection
@@ -69,6 +70,22 @@ while true; do
       #display result
       echo "The multiplication of $first_number and $second_number is :"
       expr $first_number * $second_number
+      ;;
+    "Divide"|"divide"|"d"|"D"|"DIVIDE")
+      #echo "User selected Subtract"
+
+      #call functions to get user input
+      get_first_number
+      get_second_number
+
+      if [[ second_number -eq 0 ]]; then
+          #display result
+          echo "The division of $first_number by $second_number is infinite"
+        else
+          #display result
+          echo "The division of $first_number by $second_number is :"
+          expr $first_number / $second_number
+      fi
       ;;
     "Exit"|"exit"|"e"|"E"|"EXIT")
       #echo "User selected Exit"
