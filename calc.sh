@@ -40,6 +40,8 @@ while true; do
       ;;
       "Exit")
       #echo "User selected Exit"
+      echo "Thank you for using the program."
+      exit 0
       ;;
 
       # If the selection does not match a support operation, display an error message.
