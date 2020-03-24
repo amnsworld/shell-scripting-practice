@@ -12,6 +12,7 @@ while true; do
   echo "Please select the operation you want to execute"
   echo "(A)dd"
   echo "(S)ubtract"
+  echo "(M)ultiply"
   echo "(E)xit"
   # Then, capture the user selection.
   read user_selection
@@ -47,9 +48,9 @@ while true; do
       expr $first_number + $second_number
       ;;
 
-      "Subtract"|"subtract"|"s"|"S"|"SUBTRACT")
+    "Subtract"|"subtract"|"s"|"S"|"SUBTRACT")
       #echo "User selected Subtract"
-      
+
       #call functions to get user input
       get_first_number
       get_second_number
@@ -58,14 +59,25 @@ while true; do
       echo "The difference of $first_number and $second_number is :"
       expr $first_number - $second_number
       ;;
-      "Exit"|"exit"|"e"|"E"|"EXIT")
+    "Multiply"|"multiply"|"m"|"M"|"MULTIPLY")
+      #echo "User selected Subtract"
+
+      #call functions to get user input
+      get_first_number
+      get_second_number
+
+      #display result
+      echo "The multiplication of $first_number and $second_number is :"
+      expr $first_number * $second_number
+      ;;
+    "Exit"|"exit"|"e"|"E"|"EXIT")
       #echo "User selected Exit"
       echo "Thank you for using the program."
       exit 0
       ;;
 
-      # If the selection does not match a support operation, display an error message.
-      *)
+    # If the selection does not match a support operation, display an error message.
+    *)
       echo "Sorry, unsupported operation: $user_selection"
       echo "Please try again"
       ;;
