@@ -11,6 +11,10 @@ echo "Add"
 echo "Subtract"
 echo "Exit"
 # Then, capture the user selection.
-# If the selection matches a suppor ted operation, execute the operation.
+read user_selection
+#temp to check is selction is correct. remove after check
+#echo $user_selection
+# If the selection matches a supported operation, execute the operation.
+
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
