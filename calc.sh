@@ -9,12 +9,12 @@ while true; do
     # Add
     # Subtract
     # Exit
-  echo "Please select the operation you want to execute"
-  echo "(A)dd"
-  echo "(S)ubtract"
-  echo "(M)ultiply"
-  echo "(D)ivide"
-  echo "(E)xit"
+  echo "  Please select the operation you want to execute"
+  echo "   (A)dd"
+  echo "   (S)ubtract"
+  echo "   (M)ultiply"
+  echo "   (D)ivide"
+  echo "   (E)xit"
   # Then, capture the user selection.
   read user_selection
     #temp to check is selction is correct. remove after check
