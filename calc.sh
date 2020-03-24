@@ -19,6 +19,12 @@ read user_selection
 case $user_selection in 
   "Add")
     #echo "User selected Add"
+    echo "Please enter the First number"
+    read first_number
+    echo "Please enter the Second number"
+    read second_number
+    echo "The sum of $first_number and $second_number is :"
+    expr $first_number + $second_number
     ;;
     "Subtract")
     #echo "User selected Subtract"
